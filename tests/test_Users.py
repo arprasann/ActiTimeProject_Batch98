@@ -27,10 +27,10 @@ class Test_Verify_Export_CSV_Reports(BaseClass):
         u1.set_last_name("Manga")
         u1.set_email("Dingamanaga345@gmail.com")
         self.wait_for_sometime()
-        u1.click_on_Create_User_Button()
         u1.set_user_name("admin1234")
         u1.set_password("Dinga1234")
         u1.set_reenter_password("Dinga1234")
+        u1.click_on_Create_User_Button()
 
         logout = Logout(self.driver)
         self.wait_for_sometime()
